@@ -1,0 +1,12 @@
+<div class="input-form">
+  <basic-input
+    [control]="control"
+    [placeholder]="placeholder"
+    (enter)="onSubmit.emit($event)"></basic-input>
+
+  <basic-button
+    [text]="textBtn"
+    [loading]="loadingBtn"
+    [disabled]="disabledBtn"
+    (onClick)="onSubmit.emit($event)"></basic-button>
+</div>

@@ -1,0 +1,61 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './styles/colors',
+'./styles//snack-bar';
+
+body,
+html {
+  height: 100%;
+  background-color: white;
+  color: var(--secandary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Hebrew', arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+:disabled,
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  cursor: default;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+@media only screen and (max-width: 1920px) {
+
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+
+  html,
+  body {
+    font-size: 10px;
+  }
+}

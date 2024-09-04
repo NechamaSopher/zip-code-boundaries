@@ -1,0 +1,15 @@
+.zipcode-boundary {
+  width: 100%;
+  height: 100%;
+
+  .zipcode-input {
+    position: absolute;
+    padding: 8px;
+    z-index: 1;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+}

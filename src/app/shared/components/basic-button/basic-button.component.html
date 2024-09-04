@@ -1,0 +1,8 @@
+<button class="basic-button"
+  [class.loading]="loading"
+  [class.disabled]="disabled"
+  (click)="!loading && onClick.emit($event)">
+
+  <span *ngIf="!loading" class="text">{{text}}</span>
+  <loading *ngIf="loading"></loading>
+</button>

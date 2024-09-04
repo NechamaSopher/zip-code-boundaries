@@ -1,0 +1,49 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+
+  span {
+    display: inline-block;
+    background: white;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 10px 0px rgba(244, 0, 88, 0.39);
+    animation: mini-wave 1.2s linear infinite;
+
+    &:nth-child(2) {
+      animation-delay: -1s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: -0.9s;
+    }
+
+    &.M {
+      width: 15px;
+      height: 15px;
+    }
+
+    &.L {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@keyframes mini-wave {
+
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+
+  30% {
+    transform: translateY(-5px);
+  }
+}
