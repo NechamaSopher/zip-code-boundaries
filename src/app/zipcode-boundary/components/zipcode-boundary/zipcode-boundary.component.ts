@@ -138,6 +138,8 @@ export class ZipcodeBoundaryComponent implements OnInit {
   }
 
   private fitMapToBoundaries(): void {
+    if (!this.boundaryGeoJson) return;
+    
     const coordinates = this.boundaryGeoJson.features[0].geometry.coordinates[0];
     const bounds = coordinates.reduce((bounds: any, coord: any) => bounds.extend(coord), new mapboxgl.LngLatBounds(coordinates[0], coordinates[0]));
 
