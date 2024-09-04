@@ -20,17 +20,17 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 
-1. Clone the repository:
+- Clone the repository:
     ```sh
-    git clone https://github.com/NechamaSopher/ZipCodeBoundary.git
+    git clone https://github.com/NechamaSopher/zip-code-boundaries.git
     ```
 
-2. Navigate to the project directory:
+- Navigate to the project directory:
     ```sh
     cd map-app
     ```
 
-3. Install the dependencies:
+- Install the dependencies:
     ```sh
     npm install
     ```
