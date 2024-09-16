@@ -34,3 +34,17 @@ Before you begin, ensure you have met the following requirements:
     ```sh
     npm install
     ```
+
+## Usage
+
+- Set your API keys in src/environments/environments.ts file.
+  
+- Run application:
+    ```sh
+    npm start
+    ```
+    
+- Build application:
+    ```sh
+    npm run build
+    ``` 
